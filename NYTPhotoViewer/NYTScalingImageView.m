@@ -157,7 +157,7 @@
         CGFloat minScale = MIN(scaleWidth, scaleHeight);
         
         self.minimumZoomScale = minScale;
-        self.maximumZoomScale = MAX(minScale, self.maximumZoomScale);
+//        self.maximumZoomScale = MAX(minScale, self.maximumZoomScale);
         self.zoomScale = self.minimumZoomScale;
         
         // scrollView.panGestureRecognizer.enabled is on by default and enabled by
