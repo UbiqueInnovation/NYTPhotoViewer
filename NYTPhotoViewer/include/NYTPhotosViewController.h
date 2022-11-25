@@ -281,6 +281,17 @@ extern NSString * const NYTPhotosViewControllerDidDismissNotification;
 - (CGFloat)photosViewController:(NYTPhotosViewController *)photosViewController maximumZoomScaleForPhoto:(id <NYTPhoto>)photo;
 
 /**
+*  Returns the zoom scale for a given object conforming to the `NYTPhoto` protocol when double clicking.
+*
+*  @param photosViewController The `NYTPhotosViewController` instance that sent the delegate message.
+*  @param photo                The photo for which the double tap zoom scale is requested.
+*
+*  @return The doubleTap zoom scale for the given photo.
+*/
+- (CGFloat)photosViewController:(NYTPhotosViewController *)photosViewController doubleTapZoomScaleForPhoto:(id <NYTPhoto>)photo;
+
+
+/**
  *  Called when a photo is long pressed.
  *
  *  @param photosViewController       The `NYTPhotosViewController` instance that sent the delegate message.

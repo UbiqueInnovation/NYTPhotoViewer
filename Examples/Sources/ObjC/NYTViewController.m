@@ -118,6 +118,10 @@ typedef NS_ENUM(NSUInteger, NYTViewControllerPhotoIndex) {
     return 1.0f;
 }
 
+- (CGFloat)photosViewController:(NYTPhotosViewController *)photosViewController doubleTapZoomScaleForPhoto:(id <NYTPhoto>)photo {
+    return 1.0f;
+}
+
 - (NSDictionary *)photosViewController:(NYTPhotosViewController *)photosViewController overlayTitleTextAttributesForPhoto:(id <NYTPhoto>)photo {
     if ([photo isEqual:self.dataSource.photos[NYTViewControllerPhotoIndexCustomEverything]]) {
         return @{NSForegroundColorAttributeName: [UIColor grayColor]};

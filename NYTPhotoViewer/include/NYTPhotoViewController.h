@@ -31,6 +31,12 @@ extern NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification;
  */
 @property (nonatomic, readonly) NYTScalingImageView *scalingImageView;
 
+
+/**
+ *  The doubleTapZoomScale used when tapping the photo twice.
+ */
+@property (nonatomic) CGFloat doubleTapZoomScale;
+
 /**
  *  The internal activity view shown while the image is loading. Set from the initializer.
  */
