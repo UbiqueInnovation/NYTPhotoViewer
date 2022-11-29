@@ -520,6 +520,8 @@ static const UIEdgeInsets NYTPhotosViewControllerCloseButtonImageInsets = {3, 0,
         if([self.delegate respondsToSelector:@selector(photosViewController:doubleTapZoomScaleForPhoto:)]) {
             CGFloat doubleTapZoomScaleForPhoto = [self.delegate photosViewController:self doubleTapZoomScaleForPhoto:photo];
             photoViewController.doubleTapZoomScale = doubleTapZoomScaleForPhoto;
+        } else {
+            photoViewController.doubleTapZoomScale = 1.0;
         }
 
         return photoViewController;
